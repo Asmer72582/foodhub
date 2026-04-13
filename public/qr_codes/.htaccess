@@ -1,0 +1,7 @@
+AddType image/svg+xml .svg
+AddType image/svg+xml .svgz
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>

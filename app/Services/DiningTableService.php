@@ -1,0 +1,166 @@
+<?php
+
+namespace App\Services;
+
+
+use App\Http\Requests\DiningTableRequest;
+use App\Http\Requests\PaginateRequest;
+use App\Models\DiningTable;
+use App\Models\Branch;
+use Exception;
+use Illuminate\Support\Facades\Log;
+use Smartisan\Settings\Facades\Settings;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Dipokhalder\EnvEditor\EnvEditor;
+
+class DiningTableService
+{
+    protected array $diningTableFilter = [
+        'name',
+        'size',
+        'branch_id',
+        'status'
+    ];
+
+
+    public $envService;
+
+    public function __construct(EnvEditor $envEditor)
+    {
+        $this->envService = $envEditor;
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function list(PaginateRequest $request)
+    {
+        try {
+            $requests    = $request->all();
+            $method      = $request->get('paginate', 0) == 1 ? 'paginate' : 'get';
+            $methodValue = $request->get('paginate', 0) == 1 ? $request->get('per_page', 10) : '*';
+            $orderColumn = $request->get('order_column') ?? 'id';
+            $orderType   = $request->get('order_type') ?? 'desc';
+
+            return DiningTable::with('branch')->where(function ($query) use ($requests) {
+                foreach ($requests as $key => $request) {
+                    if (in_array($key, $this->diningTableFilter)) {
+                        if ($key == "except") {
+                            $explodes = explode('|', $request);
+                            if (count($explodes)) {
+                                foreach ($explodes as $explode) {
+                                    $query->where('id', '!=', $explode);
+                                }
+                            }
+                        } else {
+                            if ($key == "branch_id") {
+                                $query->where($key, $request);
+                            } else {
+                                $query->where($key, 'like', '%' . $request . '%');
+                            }
+                        }
+                    }
+                }
+            })->orderBy($orderColumn, $orderType)->$method(
+                $methodValue
+            );
+        } catch (Exception $exception) {
+            Log::info($exception->getMessage());
+            throw new Exception($exception->getMessage(), 422);
+        }
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function store(DiningTableRequest $request)
+    {
+        try {
+            $branch      = Branch::find($request->branch_id);           
+            $branch_name = $branch ? $branch->name : "";
+
+            $filename = Str::random(10) . '.svg';
+            $slug     = Str::slug($branch_name.'-'.$request->name);
+            $url      = URL::to('/') . "/menu/" . $slug;
+
+            $qrcode = QrCode::format('svg')->size(200)->color(0, 0, 0)->backgroundColor(255, 255, 255)->generate($url);
+            
+            if (!File::exists(public_path('qr_codes/'))) {
+                File::makeDirectory(public_path('qr_codes/'), 0777, true);
+            }
+            File::put(public_path('qr_codes/' . $filename), $qrcode);
+
+            return DiningTable::create($request->validated() + ['qr_code' => 'qr_codes/' . $filename, 'slug' => $slug]);
+        } catch (Exception $exception) {
+            Log::info($exception->getMessage());
+            throw new Exception($exception->getMessage(), 422);
+        }
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function update(DiningTableRequest $request, DiningTable $diningTable)
+    {
+        try {
+            $branch      = Branch::find($request->branch_id);           
+            $branch_name = $branch ? $branch->name : "";
+
+            $filename = Str::random(10) . '.svg';
+            $slug     = Str::slug($branch_name.'-'.$request->name);
+            $url      = URL::to('/') . "/menu/" . $slug;
+
+            if($diningTable->qr_code && !$this->envService->getValue('DEMO')){
+                if (File::exists(public_path($diningTable->qr_code))) {
+                    File::delete(public_path($diningTable->qr_code));
+                }
+            }
+
+            $qrcode = QrCode::format('svg')->size(200)->color(0, 0, 0)->backgroundColor(255, 255, 255)->generate($url);
+            if (!File::exists(public_path('qr_codes/'))) {
+                File::makeDirectory(public_path('qr_codes/'), 0777, true);
+            }
+            File::put(public_path('qr_codes/' . $filename), $qrcode);
+
+            return tap($diningTable)->update($request->validated() + ['qr_code' => 'qr_codes/' . $filename, 'slug' => $slug]);
+        } catch (Exception $exception) {
+            Log::info($exception->getMessage());
+            throw new Exception($exception->getMessage(), 422);
+        }
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function destroy(DiningTable $diningTable): void
+    {
+        try {
+            if($diningTable->qr_code && !$this->envService->getValue('DEMO')){
+                if (File::exists(public_path($diningTable->qr_code))) {
+                    File::delete(public_path($diningTable->qr_code));
+                }
+            }
+            $diningTable->delete();
+        } catch (Exception $exception) {
+            Log::info($exception->getMessage());
+            throw new Exception($exception->getMessage(), 422);
+        }
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function show(DiningTable $diningTable): DiningTable
+    {
+        try {
+            return $diningTable;
+        } catch (Exception $exception) {
+            Log::info($exception->getMessage());
+            throw new Exception($exception->getMessage(), 422);
+        }
+    }
+}

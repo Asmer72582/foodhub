@@ -1,0 +1,2142 @@
+[2025-07-29 11:53:35] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:35] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:35] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:35] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:35] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:35] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:43] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:43] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:43] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:43] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:43] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:43] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:46] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:46] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:46] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:46] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:47] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:47] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:51] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:51] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:51] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:51] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:53:52] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:53:52] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:55:50] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:55:50] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:55:54] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:55:54] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:55:54] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:55:54] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 11:55:54] localhost.INFO: Detected N+1 Query  
+[2025-07-29 11:55:54] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:03:21] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:03:21] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:03:30] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:03:30] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:03:41] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:03:41] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:18:32] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:18:32] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:18:33] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:18:33] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:18:33] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:18:33] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:24:35] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:24:35] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:24:41] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:24:41] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:24:41] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:24:41] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:28:53] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:28:53] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:28:53] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:28:53] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:06] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:06] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:06] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:06] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:12] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:12] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:12] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:12] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:16] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:16] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:16] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:16] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:55] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:55] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:29:55] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:29:55] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:30:13] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:30:13] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Services/OrderService.php:845
+#26 /app/Http/Controllers/Admin/PosOrderController.php:140
+#27 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#28 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#31 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#33 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#35 /app/Http/Middleware/JsonMiddleware.php:20
+#36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#39 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:44
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#45 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+#49 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:190
+  
+[2025-07-29 12:30:13] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:30:13] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:14] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:14] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:14] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:14] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:30] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:30] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:41] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:41] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:45] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:45] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:45] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:45] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:50] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:50] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:50] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:50] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:31:59] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:59] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Services/OrderService.php:845
+#26 /app/Http/Controllers/Admin/PosOrderController.php:140
+#27 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#28 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#31 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#33 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#35 /app/Http/Middleware/JsonMiddleware.php:20
+#36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#39 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:44
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#45 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+#49 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:190
+  
+[2025-07-29 12:31:59] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:31:59] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:04] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:04] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:04] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:04] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:09] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:09] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:09] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:09] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:21] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:21] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:27] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:27] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:27] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:27] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:32:36] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:32:36] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:35:42] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:35:42] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:35:49] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:35:49] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Services/OrderService.php:845
+#26 /app/Http/Controllers/Admin/PosOrderController.php:140
+#27 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#28 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#31 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#33 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#35 /app/Http/Middleware/JsonMiddleware.php:20
+#36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#39 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:44
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#45 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+#49 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:190
+  
+[2025-07-29 12:35:49] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:35:49] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:36:24] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:36:24] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:36:33] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:36:33] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:36:33] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:36:33] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
+[2025-07-29 12:36:45] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:36:45] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Services/OrderService.php:845
+#26 /app/Http/Controllers/Admin/PosOrderController.php:140
+#27 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#28 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#31 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#32 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#33 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#34 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#35 /app/Http/Middleware/JsonMiddleware.php:20
+#36 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#37 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#38 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#39 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php:44
+#43 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#45 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+#49 /vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php:190
+  
+[2025-07-29 12:36:46] localhost.INFO: Detected N+1 Query  
+[2025-07-29 12:36:46] localhost.INFO: Model: App\Models\Order
+Relation: App\Models\User
+Num-Called: 2
+Call-Stack:
+#13 /app/Traits/DefaultAccessModelTrait.php:17
+#14 /app/Models/Scopes/BranchScope.php:20
+#24 /app/Services/OrderService.php:503
+#25 /app/Http/Controllers/Admin/PosOrderController.php:53
+#26 /vendor/laravel/framework/src/Illuminate/Routing/Controller.php:54
+#27 /vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:43
+#28 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:259
+#29 /vendor/laravel/framework/src/Illuminate/Routing/Route.php:205
+#30 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:798
+#31 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:141
+#32 /vendor/spatie/laravel-permission/src/Middlewares/PermissionMiddleware.php:24
+#33 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#34 /app/Http/Middleware/localization.php:15
+#35 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#36 /app/Http/Middleware/Installed.php:21
+#37 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#38 /app/Http/Middleware/JsonMiddleware.php:20
+#39 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#40 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php:50
+#41 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#42 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:126
+#43 /vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php:57
+#44 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:180
+#45 /vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:116
+#46 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:797
+#47 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:776
+#48 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:740
+#49 /vendor/laravel/framework/src/Illuminate/Routing/Router.php:729
+  
