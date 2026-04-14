@@ -16,6 +16,10 @@ class OrderResource extends JsonResource
      */
     public function toArray($request): array
     {
+        if (!$this->resource) {
+            return [];
+        }
+
         return [
             'id'                             => $this->id,
             'order_serial_no'                => $this->order_serial_no,
@@ -44,8 +48,8 @@ class OrderResource extends JsonResource
             'tip_currency_amount'            => AppLibrary::currencyAmountFormat($this->tip_amount),
             'tip_employee_id'                => $this->tip_employee_id,
             'tip_employee_name'              => optional($this->tipEmployee)->name,
-            'customer'                       => new OrderUserResource($this->user->load('roles', 'media')),
-            'transaction'                    => new TransactionResource($this->transaction?->load('order')),
+            'customer'                       => $this->user ? new OrderUserResource($this->user->load('roles', 'media')) : null,
+            'transaction'                    => $this->transaction ? new TransactionResource($this->transaction->load('order')) : null,
         ];
     }
 }

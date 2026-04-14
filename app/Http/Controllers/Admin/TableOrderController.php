@@ -36,7 +36,15 @@ class TableOrderController extends AdminController
     public function index(PaginateRequest $request): \Illuminate\Http\Response | \Illuminate\Http\Resources\Json\AnonymousResourceCollection | \Illuminate\Contracts\Foundation\Application | \Illuminate\Contracts\Routing\ResponseFactory
     {
         try {
-            return OrderResource::collection($this->orderService->list($request));
+            $orders = Order::with(['orderItems', 'diningTable', 'user'])
+                ->whereNotNull('id')
+                ->where('order_type', \App\Enums\OrderType::DINING_TABLE)
+                ->latest()
+                ->paginate($request->get('per_page', 10));
+
+            \Illuminate\Support\Facades\Log::info('Dining Orders:', $orders->toArray());
+
+            return OrderResource::collection($orders ?? collect());
         } catch (Exception $exception) {
             return response(['status' => false, 'message' => $exception->getMessage()], 422);
         }
