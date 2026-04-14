@@ -47,7 +47,11 @@ export default {
             return this.$store.getters['frontendSetting/lists'];
         },
         menus: function () {
-            return this.$store.getters.authMenu;
+            let menus = this.$store.getters.authMenu;
+            if (parseInt(this.$store.getters.authInfo.role) == 5) {
+                return menus.filter(m => m.url !== 'dashboard' && m.language !== 'dashboard');
+            }
+            return menus;
         }
     }
 }

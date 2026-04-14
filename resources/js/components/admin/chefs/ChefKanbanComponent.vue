@@ -189,12 +189,14 @@ export default {
 
 <style scoped>
 .chef-kanban-wrapper {
-    padding: 0.5rem;
+    padding: 0;
+    width: 100%;
 }
 .kanban-grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 0.75rem;
+    gap: 1rem;
+    width: 100%;
 }
 @media (min-width: 1024px) {
     .kanban-grid {
@@ -208,7 +210,7 @@ export default {
     border: 1px solid #eef2f6;
     display: flex;
     flex-direction: column;
-    min-height: 400px;
+    min-height: calc(100vh - 180px);
 }
 .kanban-col-header {
     padding: 0.625rem 0.875rem;

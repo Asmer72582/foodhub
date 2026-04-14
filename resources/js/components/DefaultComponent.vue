@@ -11,9 +11,9 @@
     </div>
 
     <div v-if="theme === 'backend'">
-      <main class="db-main" v-if="logged">
+      <main class="db-main" :class="parseInt(authInfo.role) === 5 ? 'expand' : ''" v-if="logged">
         <BackendNavbarComponent />
-        <BackendMenuComponent />
+        <BackendMenuComponent v-if="parseInt(authInfo.role) != 5" />
         <router-view></router-view>
       </main>
 
@@ -45,6 +45,7 @@ import TableFooterComponent from "./layouts/table/TableFooterComponent.vue";
 import TableCartComponent from "./layouts/table/TableCartComponent.vue";
 import displayModeEnum from "../enums/modules/displayModeEnum";
 import env from "../config/env";
+import roleEnum from "../enums/modules/roleEnum";
 
 export default {
   name: "DefaultComponent",
@@ -64,6 +65,9 @@ export default {
   data() {
     return {
       theme: "frontend",
+      enums: {
+        roleEnum: roleEnum
+      }
     };
   },
   computed: {
@@ -72,6 +76,9 @@ export default {
     },
     logged: function () {
       return this.$store.getters.authStatus;
+    },
+    authInfo: function () {
+      return this.$store.getters.authInfo;
     },
   },
   beforeMount() {

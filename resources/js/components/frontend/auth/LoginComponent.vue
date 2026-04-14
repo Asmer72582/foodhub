@@ -128,7 +128,12 @@ export default {
                     if (this.carts.length > 0) {
                         router.push({ name: "frontend.checkout" });
                     } else {
-                        router.push({ name: "frontend.home" });
+                        const user = res.data.user;
+                        if (user && user.role == 5) {
+                            router.push({ name: "admin.chefs.kanban" });
+                        } else {
+                            router.push({ name: "frontend.home" });
+                        }
                     }
                 }).catch((err) => {
                     this.loading.isActive = false;

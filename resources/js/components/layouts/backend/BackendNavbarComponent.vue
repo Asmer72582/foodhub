@@ -56,7 +56,7 @@
                     </router-link>
                 </div>
             </div>
-            <button class="fa-solid fa-align-left db-header-nav w-9 h-9 rounded-lg text-primary bg-primary/5"></button>
+            <button v-if="authInfo.role != enums.roleEnum.CHEF" class="fa-solid fa-align-left db-header-nav w-9 h-9 rounded-lg text-primary bg-primary/5"></button>
 
             <div class="dropdown-group">
                 <button class="dropdown-btn flex items-center gap-2">
@@ -139,6 +139,8 @@ import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
 import axios from "axios";
 
+import roleEnum from "../../../enums/modules/roleEnum";
+
 export default {
     name: "BackendNavbarComponent",
     data() {
@@ -147,6 +149,7 @@ export default {
                 isActive: false,
             },
             enums: {
+                roleEnum: roleEnum,
                 activityEnum: activityEnum
             },
             defaultBranch: null,

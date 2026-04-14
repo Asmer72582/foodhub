@@ -113,7 +113,9 @@ router.beforeEach((to, from, next) => {
             next({ name: "auth.login" });
         } else {
             if (to.meta.isFrontend === false) {
-                if (to.meta.access === false) {
+                if (to.name === 'admin.dashboard' && store.getters.authInfo && store.getters.authInfo.role == 5) {
+                    next({ name: 'admin.chefs.kanban' });
+                } else if (to.meta.access === false) {
                     next({
                         name: "route.exception",
                     });

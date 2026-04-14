@@ -136,11 +136,19 @@
                         </div>
                         <nav class="px-4">
                             <router-link
-                                v-if="profile.role_id !== enums.roleEnum.CUSTOMER && Object.keys(authDefaultPermission).length > 0"
-                                :to="{ name: 'admin.dashboard' }"
+                                v-if="profile.role !== enums.roleEnum.CUSTOMER && profile.role !== enums.roleEnum.CHEF && Object.keys(authDefaultPermission).length > 0"
+                                :to="'/admin/' + authDefaultPermission.url"
                                 class="paper-link transition w-full flex items-center gap-3.5 py-2.5 border-b last:border-none border-[#EFF0F6]">
                                 <i class="lab lab-dashboard lab-font-size-17"></i>
-                                <span class="text-sm leading-6 capitalize">{{ $t('menu.dashboard') }}</span>
+                                <span class="text-sm leading-6 capitalize">{{ authDefaultPermission.name === 'dashboard' ? $t('menu.dashboard') : $t('menu.' + authDefaultPermission.name) }}</span>
+                            </router-link>
+
+                            <router-link
+                                v-if="profile.role === enums.roleEnum.CHEF"
+                                :to="{ name: 'admin.chefs.kanban' }"
+                                class="paper-link transition w-full flex items-center gap-3.5 py-2.5 border-b last:border-none border-[#EFF0F6]">
+                                <i class="lab lab-reserve-line lab-font-size-17"></i>
+                                <span class="text-sm leading-6 capitalize">{{ $t('menu.kanban') || 'Kanban' }}</span>
                             </router-link>
 
                             <router-link :to="{ name: 'frontend.myOrder' }"
