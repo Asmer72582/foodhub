@@ -336,10 +336,17 @@ export default {
                         }
                     }
 
-                    if(permission.name === 'table-orders') {
+                    if(permission.name === 'table-orders' || permission.name === 'chef-kanban-board') {
                         if(permission.access === true) {
                             this.orderNotification.tablePermission = true;
                             this.orderNotification.tableUrl = permission.url;
+                        }
+                    }
+
+                    if(permission.name === 'online-orders' || permission.name === 'chef-kanban-board') {
+                        if(permission.access === true) {
+                            this.orderNotification.permission = true;
+                            this.orderNotification.url = permission.url;
                         }
                     }
                 });

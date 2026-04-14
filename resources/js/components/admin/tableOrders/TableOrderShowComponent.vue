@@ -212,12 +212,12 @@
                     </div>
                     <div class="db-card-body">
                         <div class="flex items-center gap-3 mb-4">
-                            <img class="w-8 rounded-full" :src="orderUser.image" alt="avatar" />
+                            <img class="w-8 rounded-full" :src="orderUser.image" alt="avatar" v-if="orderUser && orderUser.image" />
                             <h4 class="font-semibold text-sm capitalize text-[#374151]">
-                                {{ textShortener(orderUser.name, 20) }}
+                                {{ (orderUser && orderUser.name) ? textShortener(orderUser.name, 20) : $t('label.walk_in_customer') }}
                             </h4>
                         </div>
-                        <ul class="flex flex-col gap-3 py-4 mb-4 border-y border-[#EFF0F6]">
+                        <ul class="flex flex-col gap-3 py-4 mb-4 border-y border-[#EFF0F6]" v-if="orderUser && orderUser.email">
                             <li class="flex items-center gap-2.5">
                                 <i class="lab lab-mail lab-font-size-14"></i>
                                 <span class="text-xs">{{ orderUser.email }}</span>

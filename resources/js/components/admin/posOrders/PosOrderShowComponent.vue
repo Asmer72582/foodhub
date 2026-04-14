@@ -244,11 +244,11 @@
                             <div class="bg-gradient-to-br from-primary/5 to-primary/10 rounded-xl p-5">
                                 <div class="flex items-center gap-3 mb-3">
                                     <img class="w-14 h-14 rounded-xl shadow-sm object-cover border-2 border-white"
-                                         :src="orderUser.image"
+                                         :src="orderUser.image" v-if="orderUser && orderUser.image"
                                          alt="Customer">
                                     <div>
                                         <h4 class="text-lg font-medium text-gray-800">
-                                            {{ textShortener(orderUser.name, 20) }}
+                                            {{ (orderUser && orderUser.name) ? textShortener(orderUser.name, 20) : $t('label.walk_in_customer') }}
                                         </h4>
                                         <p class="text-sm text-gray-500">
                                             <i class="lab lab-call-calling-linear mr-1"></i>
