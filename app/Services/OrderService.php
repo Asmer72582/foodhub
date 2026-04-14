@@ -626,7 +626,7 @@ class OrderService
     /**
      * @throws Exception
      */
-    public function changeStatus(Order $order, $auth = false, OrderStatusRequest $request): Order|array
+    public function changeStatus(Order $order, $auth, OrderStatusRequest $request): Order|array
     {
         try {
             if ($auth) {
@@ -684,7 +684,7 @@ class OrderService
     /**
      * @throws Exception
      */
-    public function changePaymentStatus(Order $order, $auth = false, PaymentStatusRequest $request): Order|array
+    public function changePaymentStatus(Order $order, $auth, PaymentStatusRequest $request): Order|array
     {
         try {
             if ($auth) {
@@ -707,7 +707,7 @@ class OrderService
     }
 
 
-    public function tokenCreate(Order $order, $auth = false, TableOrderTokenRequest $request): Order|array
+    public function tokenCreate(Order $order, $auth, TableOrderTokenRequest $request): Order|array
     {
         try {
             if ($auth) {
@@ -732,7 +732,7 @@ class OrderService
     /**
      * @throws Exception
      */
-    public function selectDeliveryBoy(Order $order, $auth = false, Request $request): Order|array
+    public function selectDeliveryBoy(Order $order, $auth, Request $request): Order|array
     {
         try {
             if ($auth) {
