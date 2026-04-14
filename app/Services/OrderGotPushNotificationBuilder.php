@@ -26,12 +26,12 @@ class OrderGotPushNotificationBuilder
     public function send(): void
     {
         if (!blank($this->order)) {
-            $fcmWebDeviceTokenAllAdmins         = User::role(Role::ADMIN)->where(['branch_id' => 0])->whereNotNull('web_token')->get();
-            $fcmWebDeviceTokenBranchAdmins      = User::role(Role::ADMIN)->where(['branch_id' => $this->order->branch_id])->whereNotNull('web_token')->get();
-            $fcmWebDeviceTokenBranchManagers    = User::role(Role::BRANCH_MANAGER)->where(['branch_id' => $this->order->branch_id])->whereNotNull('web_token')->get();
-            $fcmMobileDeviceTokenAllAdmins      = User::role(Role::ADMIN)->where(['branch_id' => 0])->whereNotNull('device_token')->get();
-            $fcmMobileDeviceTokenBranchAdmins   = User::role(Role::ADMIN)->where(['branch_id' => $this->order->branch_id])->whereNotNull('device_token')->get();
-            $fcmMobileDeviceTokenBranchManagers = User::role(Role::BRANCH_MANAGER)->where(['branch_id' => $this->order->branch_id])->whereNotNull('device_token')->get();
+            $fcmWebDeviceTokenAllAdmins         = User::withoutGlobalScopes()->role(Role::ADMIN)->where(['branch_id' => 0])->whereNotNull('web_token')->get();
+            $fcmWebDeviceTokenBranchAdmins      = User::withoutGlobalScopes()->role(Role::ADMIN)->where(['branch_id' => $this->order->branch_id])->whereNotNull('web_token')->get();
+            $fcmWebDeviceTokenBranchManagers    = User::withoutGlobalScopes()->role(Role::BRANCH_MANAGER)->where(['branch_id' => $this->order->branch_id])->whereNotNull('web_token')->get();
+            $fcmMobileDeviceTokenAllAdmins      = User::withoutGlobalScopes()->role(Role::ADMIN)->where(['branch_id' => 0])->whereNotNull('device_token')->get();
+            $fcmMobileDeviceTokenBranchAdmins   = User::withoutGlobalScopes()->role(Role::ADMIN)->where(['branch_id' => $this->order->branch_id])->whereNotNull('device_token')->get();
+            $fcmMobileDeviceTokenBranchManagers = User::withoutGlobalScopes()->role(Role::BRANCH_MANAGER)->where(['branch_id' => $this->order->branch_id])->whereNotNull('device_token')->get();
 
             $i             = 0;
             $fcmTokenArray = [];

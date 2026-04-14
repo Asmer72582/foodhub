@@ -414,14 +414,14 @@ class OrderService
         try {
             DB::transaction(function () use ($request) {
                 $this->order = FrontendOrder::create(
-                    $request->validated() + [
+                    array_merge($request->validated(), [
                         'user_id'          => $request->customer_id,
                         'order_type'       => \App\Enums\OrderType::DINING_TABLE,
                         'dining_table_id'  => $request->dining_table_id ?? null,
                         'status'           => OrderStatus::PENDING,
                         'order_datetime'   => date('Y-m-d H:i:s'),
                         'preparation_time' => Settings::group('order_setup')->get('order_setup_food_preparation_time')
-                    ]
+                    ])
                 );
 
                 \Illuminate\Support\Facades\Log::info('QR Order Created:', $this->order->toArray());
