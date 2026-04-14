@@ -54,10 +54,10 @@ class DiningTableTableSeeder extends Seeder
         if ($envService->getValue('DEMO')) {
             foreach ($this->tables as $table) {
                 $filename = Str::random(10) . '.png';
-                if (!File::exists(storage_path('app/public/qr_codes/'))) {
-                    File::makeDirectory(storage_path('app/public/qr_codes/'));
+                if (!File::exists(public_path('storage/qr_codes/'))) {
+                    File::makeDirectory(public_path('storage/qr_codes/'), 0755, true);
                 }
-                QrCode::format('png')->size(200)->generate(URL::to('/') . "/menu/" . $table['slug'], storage_path('app/public/qr_codes/' . $filename));
+                QrCode::format('png')->size(200)->generate(URL::to('/') . "/menu/" . $table['slug'], public_path('storage/qr_codes/' . $filename));
 
                 DiningTable::create([
                     'name'      => $table['name'],

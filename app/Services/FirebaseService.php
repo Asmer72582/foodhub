@@ -71,8 +71,13 @@ class FirebaseService
         $parsed_url = parse_url($keyFilePath);
 
         if (isset($parsed_url['path'])) {
-            $relative_path = ltrim($parsed_url['path'], '/storage');
-            $this->filePath = storage_path('app/public/' . $relative_path);
+            $relative_path = ltrim(str_replace('/storage/', '/', $parsed_url['path']), '/');
+            $this->filePath = \Illuminate\Support\Facades\Storage::disk('public')->path($relative_path);
+            
+            $dir = dirname($this->filePath);
+            if (!\Illuminate\Support\Facades\File::exists($dir)) {
+                \Illuminate\Support\Facades\File::makeDirectory($dir, 0755, true);
+            }
         } else {
             throw new Exception('No file found in the URL');
         }

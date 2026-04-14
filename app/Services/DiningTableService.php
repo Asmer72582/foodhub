@@ -13,7 +13,6 @@ use Smartisan\Settings\Facades\Settings;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Dipokhalder\EnvEditor\EnvEditor;
 
@@ -89,12 +88,9 @@ class DiningTableService
 
             $qrcode = QrCode::format('svg')->size(200)->color(0, 0, 0)->backgroundColor(255, 255, 255)->generate($url);
             
-            if (!File::exists(public_path('qr_codes/'))) {
-                File::makeDirectory(public_path('qr_codes/'), 0777, true);
-            }
-            File::put(public_path('qr_codes/' . $filename), $qrcode);
+            Storage::disk('public')->put('qr_codes/' . $filename, $qrcode);
 
-            return DiningTable::create($request->validated() + ['qr_code' => 'qr_codes/' . $filename, 'slug' => $slug]);
+            return DiningTable::create($request->validated() + ['qr_code' => 'storage/qr_codes/' . $filename, 'slug' => $slug]);
         } catch (Exception $exception) {
             Log::info($exception->getMessage());
             throw new Exception($exception->getMessage(), 422);
@@ -115,18 +111,16 @@ class DiningTableService
             $url      = URL::to('/') . "/menu/" . $slug;
 
             if($diningTable->qr_code && !$this->envService->getValue('DEMO')){
-                if (File::exists(public_path($diningTable->qr_code))) {
-                    File::delete(public_path($diningTable->qr_code));
+                $qrPath = str_replace('storage/', '', $diningTable->qr_code);
+                if (Storage::disk('public')->exists($qrPath)) {
+                    Storage::disk('public')->delete($qrPath);
                 }
             }
 
             $qrcode = QrCode::format('svg')->size(200)->color(0, 0, 0)->backgroundColor(255, 255, 255)->generate($url);
-            if (!File::exists(public_path('qr_codes/'))) {
-                File::makeDirectory(public_path('qr_codes/'), 0777, true);
-            }
-            File::put(public_path('qr_codes/' . $filename), $qrcode);
+            Storage::disk('public')->put('qr_codes/' . $filename, $qrcode);
 
-            return tap($diningTable)->update($request->validated() + ['qr_code' => 'qr_codes/' . $filename, 'slug' => $slug]);
+            return tap($diningTable)->update($request->validated() + ['qr_code' => 'storage/qr_codes/' . $filename, 'slug' => $slug]);
         } catch (Exception $exception) {
             Log::info($exception->getMessage());
             throw new Exception($exception->getMessage(), 422);
@@ -140,8 +134,9 @@ class DiningTableService
     {
         try {
             if($diningTable->qr_code && !$this->envService->getValue('DEMO')){
-                if (File::exists(public_path($diningTable->qr_code))) {
-                    File::delete(public_path($diningTable->qr_code));
+                $qrPath = str_replace('storage/', '', $diningTable->qr_code);
+                if (Storage::disk('public')->exists($qrPath)) {
+                    Storage::disk('public')->delete($qrPath);
                 }
             }
             $diningTable->delete();

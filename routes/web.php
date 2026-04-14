@@ -61,5 +61,19 @@ Route::prefix('payment')->name('payment.')->middleware(['installed'])->group(fun
     Route::match(['get', 'post'], '/{paymentGateway:slug}/{order}/cancel', [PaymentController::class, 'cancel'])->name('cancel');
     Route::get('/successful/{order}', [PaymentController::class, 'successful'])->name('successful');
 });
+Route::get('/storage/{path}', function ($path) {
+    $parts = explode('/', $path);
+    // If we're in production, we expect the web server to serve this directly from public_html/storage.
+    // However, if it falls through to Laravel, we can try to serve it from the public disk's root.
+    $root = config('filesystems.disks.public.root');
+    $filePath = rtrim($root, '/') . '/' . $path;
+
+    if (!\Illuminate\Support\Facades\File::exists($filePath)) {
+        abort(404);
+    }
+    
+    $mimeType = \Illuminate\Support\Facades\File::mimeType($filePath);
+    return response()->file($filePath, ['Content-Type' => $mimeType]);
+})->where('path', '.*');
 
 Route::get('/{any}', [RootController::class, 'index'])->middleware(['installed'])->where(['any' => '.*']);
